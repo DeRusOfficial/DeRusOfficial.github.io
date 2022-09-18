@@ -9,6 +9,7 @@ const   mainWindow = document.querySelector('#main'),
 
         goToAbout = document.querySelector('.promo__aboutMe_title'),
         aboutMeWindow = document.querySelector('#aboutMe'),
+        backToPromo = document.querySelector('.aboutMe__triangle_right'),
 
         menuPort = document.querySelector('.menu'),
         buttonCloseMenu = document.querySelector('.menu__logo'),
@@ -47,4 +48,9 @@ goToPromo.addEventListener('click', () => {
 goToAbout.addEventListener('click', () => {
     promoWindow.style.display = 'none';
     aboutMeWindow.style.display = 'block';
+});
+
+backToPromo.addEventListener('click', () => {
+    aboutMeWindow.style.display = 'none';
+    promoWindow.style.display = 'block';
 });
