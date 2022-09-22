@@ -11,6 +11,9 @@ const   mainWindow = document.querySelector('#main'),
         aboutMeWindow = document.querySelector('#aboutMe'),
         backToPromo = document.querySelector('.aboutMe__triangle_right'),
 
+        goToPortfolio = document.querySelector('.promo__projects_title'),
+        portfolioWindow = document.querySelector('#portfolio'),
+
         menuPort = document.querySelector('.menu'),
         buttonCloseMenu = document.querySelector('.menu__logo'),
         mainToPromo = document.querySelector('.main__title');
@@ -53,4 +56,9 @@ goToAbout.addEventListener('click', () => {
 backToPromo.addEventListener('click', () => {
     aboutMeWindow.style.display = 'none';
     promoWindow.style.display = 'block';
+});
+
+goToPortfolio.addEventListener('click', () => {
+    promoWindow.style.display = 'none';
+    portfolioWindow.style.display = 'block';
 });

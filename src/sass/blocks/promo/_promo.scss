@@ -126,6 +126,11 @@
             font-size: 24px;
             color: #000000;
             text-shadow: 0 0 5px #ffffff;
+            cursor: pointer;
+            transition: all 0.6s;
+            &:hover {
+                background-color: rgba(#CC3A66, 0.7);
+            }
         }
         &_subtitle {
             margin: 0 auto;
